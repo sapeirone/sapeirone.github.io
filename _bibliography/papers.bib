@@ -1,115 +1,76 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
-}
-
-@book{einstein1956investigations,
+@article{peirone2025hiero,
+  abbr={arXiv},
+  title={HiERO: understanding the hierarchy of human behavior enhances reasoning on egocentric videos},
+  author={Peirone, Simone Alberto and Pistilli, Francesca and Averta, Giuseppe},
+  journal={arXiv preprint arXiv:2505.12911},
+  year={2025},
   bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
-}
-
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
-}
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
+  code={https://github.com/sapeirone/HiERO},
   selected={true},
-  inspirehep_id = {3255}
+  preview={hiero.png},
+  abstract={Human activities are particularly complex and variable, and this makes challenging for deep learning models to reason about them. However, we note that such variability does have an underlying structure, composed of a hierarchy of patterns of related actions. We argue that such structure can emerge naturally from unscripted videos of human activities, and can be leveraged to better reason about their content. We present HiERO, a weakly-supervised method to enrich video segments features with the corresponding hierarchical activity threads. By aligning video clips with their narrated descriptions, HiERO infers contextual, semantic and temporal reasoning with an hierarchical architecture. We prove the potential of our enriched features with multiple video-text alignment benchmarks (EgoMCQ, EgoNLQ) with minimal additional training, and in zero-shot for procedure learning tasks (EgoProceL and Ego4D Goal-Step). Notably, HiERO achieves state-of-the-art performance in all the benchmarks, and for procedure learning tasks it outperforms fully-supervised methods by a large margin (+12.5% F1 on EgoProceL) in zero shot. Our results prove the relevance of using knowledge of the hierarchy of human activities for multiple reasoning tasks in egocentric vision.}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
+@article{peirone2025hier,
+  abbr={arXiv},
+  title={Hier-EgoPack: Hierarchical Egocentric Video Understanding with Diverse Task Perspectives},
+  author={Peirone, Simone Alberto and Pistilli, Francesca and Alliegro, Antonio and Tommasi, Tatiana and Averta, Giuseppe},
+  journal={arXiv preprint arXiv:2502.02487},
+  year={2025},
   bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
+  code={https://github.com/sapeirone/hier-egopack},
+  website={https://sapeirone.github.io/hier-egopack/},
+  selected={true},
+  preview={hier-egopack.png},
+  abstract={Our comprehension of video streams depicting human activities is naturally multifaceted: in just a few moments, we can grasp what is happening, identify the relevance and interactions of objects in the scene, and forecast what will happen soon, everything all at once. To endow autonomous systems with such a holistic perception, learning how to correlate concepts, abstract knowledge across diverse tasks, and leverage tasks synergies when learning novel skills is essential. A significant step in this direction is EgoPack, a unified framework for understanding human activities across diverse tasks with minimal overhead. EgoPack promotes information sharing and collaboration among downstream tasks, essential for efficiently learning new skills. In this paper, we introduce Hier-EgoPack, which advances EgoPack by enabling reasoning also across diverse temporal granularities, which expands its applicability to a broader range of downstream tasks. To achieve this, we propose a novel hierarchical architecture for temporal reasoning equipped with a GNN layer specifically designed to tackle the challenges of multi-granularity reasoning effectively. We evaluate our approach on multiple Ego4d benchmarks involving both clip-level and frame-level reasoning, demonstrating how our hierarchical unified architecture effectively solves these diverse tasks simultaneously.}
 }
 
-@book{przibram1967letters,
+@article{peirone2025egocentric,
+  abbr={PRL},
+  title={Egocentric zone-aware action recognition across environments},
+  author={Peirone, Simone Alberto and Goletto, Gabriele and Planamente, Mirco and Bottino, Andrea and Caputo, Barbara and Averta, Giuseppe},
+  journal={Pattern Recognition Letters},
+  volume={188},
+  pages={140--147},
+  year={2025},
+  publisher={Elsevier},
   bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+  code={https://github.com/sapeirone/EgoZAR},
+  website={https://gabrielegoletto.github.io/EgoZAR/},
+  preview={egozar.png},
+  abstract={Human activities exhibit a strong correlation between actions and the places where these are performed, such as washing something at a sink. More specifically, in daily living environments we may identify particular locations, hereinafter named activity-centric zones, which may afford a set of homogeneous actions. Their knowledge can serve as a prior to favor vision models to recognize human activities. However, the appearance of these zones is scene-specific, limiting the transferability of this prior information to unfamiliar areas and domains. This problem is particularly relevant in egocentric vision, where the environment takes up most of the image, making it even more difficult to separate the action from the context. In this paper, we discuss the importance of decoupling the domain-specific appearance of activity-centric zones from their universal, domain-agnostic representations, and show how the latter can improve the cross-domain transferability of Egocentric Action Recognition (EAR) models. We validate our solution on the EPIC-Kitchens-100 and Argo1M datasets.}
+}
+
+@inproceedings{peirone2024backpack,
+  abbr={CVPR},
+  title={A backpack full of skills: Egocentric video understanding with diverse task perspectives},
+  author={Peirone, Simone Alberto and Pistilli, Francesca and Alliegro, Antonio and Averta, Giuseppe},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={18275--18285},
+  year={2024},
+  video={https://www.youtube.com/watch?v=roKNbBP5AXY},
+  website={https://sapeirone.github.io/EgoPack/},
+  code={https://github.com/sapeirone/EgoPack},
+  bibtex_show={true},
+  selected={true},
+  preview={egopack.png},
+  abstract={Human comprehension of a video stream is naturally broad: in a few instants, we are able to understand what is happening, the relevance and relationship of objects, and forecast what will follow in the near future, everything all at once. We believe that - to effectively transfer such an holistic perception to intelligent machines - an important role is played by learning to correlate concepts and to abstract knowledge coming from different tasks, to synergistically exploit them when learning novel skills. To accomplish this, we seek for a unified approach to video understanding which combines shared temporal modelling of human actions with minimal overhead, to support multiple downstream tasks and enable cooperation when learning novel skills. We then propose EgoPack, a solution that creates a collection of task perspectives that can be carried across downstream tasks and used as a potential source of additional insights, as a backpack of skills that a robot can carry around and use when needed. We demonstrate the effectiveness and efficiency of our approach on four Ego4d benchmarks, outperforming current state-of-the-art methods.}
+}
+
+@article{planamente2024relative,
+  abbr={IJCV},
+  title={Relative norm alignment for tackling domain shift in deep multi-modal classification},
+  author={Planamente, Mirco and Plizzari, Chiara and Peirone, Simone Alberto and Caputo, Barbara and Bottino, Andrea},
+  journal={International Journal of Computer Vision},
+  volume={132},
+  number={7},
+  pages={2618--2638},
+  year={2024},
+  publisher={Springer},
+  bibtex_show={true},
+  preview={rna.png},
+  abstract={Multi-modal learning has gained significant attention due to its ability to enhance machine learning algorithms. However, it brings challenges related to modality heterogeneity and domain shift. In this work, we address these challenges by proposing a new approach called Relative Norm Alignment (RNA) loss. RNA loss exploits the observation that variations in marginal distributions between modalities manifest as discrepancies in their mean feature norms, and rebalances feature norms across domains, modalities, and classes. This rebalancing improves the accuracy of models on test data from unseen ("target") distributions. In the context of Unsupervised Domain Adaptation (UDA), we use unlabeled target data to enhance feature transferability. We achieve this by combining RNA loss with an adversarial domain loss and an Information Maximization term that regularizes predictions on target data. We present a comprehensive analysis and ablation of our method for both Domain Generalization and UDA settings, testing our approach on different modalities for tasks such as first and third person action recognition, object recognition, and fatigue detection. Experimental results show that our approach achieves competitive or state-of-the-art performance on the proposed benchmarks, showing the versatility and effectiveness of our method in a wide range of applications.}
 }
