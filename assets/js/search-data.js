@@ -42,6 +42,9 @@ ninja.data = [{
           section: "News",},{id: "news-we-are-presenting-hiero-and-hier-egopack-at-the-egovis-workshop-and-at-the-workshop-on-visual-concepts-cvpr-2025-see-you-there",
           title: '📢 We are presenting HiERO and Hier-EgoPack at the EgoVis Workshop and at...',
           description: "",
+          section: "News",},{id: "news-our-paper-hiero-understanding-the-hierarchy-of-human-behavior-enhances-reasoning-on-egocentric-videos-was-accepted-at-iccv-2025-arxiv-here-see-you-in-honolulu",
+          title: '🚀 Our paper “HiERO: understanding the hierarchy of human behavior enhances reasoning on...',
+          description: "",
           section: "News",},{
       id: 'light-theme',
       title: 'Change theme to light',
