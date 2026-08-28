@@ -12,7 +12,7 @@
     "venue": "Preprint",
     "venueLong": "Preprint",
     "selected": true,
-    "tldr": "Modelling how a scene graph evolves over time to reason about the activities that transform it.",
+    "tldr": "A graph edit formulation to model dynamic scenes of human acitivties.",
     "image": "assets/img/pubs/glen.jpg",
     "links": {
       "page": "https://francescapistilli.github.io/GLEN/",

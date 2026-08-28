@@ -88,15 +88,41 @@ too — a teaser shown under the text, capped at 420px wide.
 ## Images
 
 The portrait (`assets/img/profile.jpg`) and the six paper teasers (`assets/img/pubs/`) were carried over from the
-old al-folio site and resized for the web (900px wide for the portrait, 520–800px for the teasers; ~700 KB in
-total). To swap one, drop a new file in place — teasers are wired up via the `image` key in `publications.json`,
-and they appear on the homepage only.
+old al-folio site and sized to what the layout actually displays: 560px wide for the portrait (shown at 264px, so
+560 covers a 2× screen) and 520px for the teasers (118px on desktop, full-width on mobile). Progressive JPEG,
+quality ~80, metadata stripped — 232 KB in total.
+
+If you replace one, resize it too; dropping in a 4000px original would undo most of the page weight. The command
+used was:
+
+```sh
+magick in.jpg -resize '520x>' -strip -interlace Plane -quality 74 -sampling-factor 4:2:0 out.jpg
+```
+
+Teasers are wired up via the `image` key in `publications.json`, and they appear on the homepage only.
 
 ## Typography
 
 The whole site is set in a geometric sans: real **Century Gothic** where the visitor has it installed, with
-**Jost** (loaded from Google Fonts) as the fallback everywhere else. Both come from the same Futura lineage,
-so the layout holds either way. The stack lives in one place — `--font-geometric` in `assets/css/style.css`.
+**Jost** as the fallback everywhere else. Both come from the same Futura lineage, so the layout holds either way.
+The stack lives in one place — `--font-geometric` in `assets/css/style.css`.
+
+Jost is **self-hosted** from `assets/fonts/` rather than loaded from Google Fonts, which keeps it on one origin
+and off the critical path: four variable-weight `woff2` files (roman and italic × latin and latin-ext), declared
+with `@font-face` at the top of `style.css`. The cyrillic subsets Google serves are not included. `unicode-range`
+means latin-ext is only downloaded if a character in that range actually appears, so the typical visit fetches
+one 26 KB file, preloaded in each page's `<head>`.
+
+Jost is under the SIL Open Font License 1.1 — [`assets/fonts/OFL.txt`](assets/fonts/OFL.txt). Keep that file
+alongside the fonts if you redistribute them.
+
+To change or add a weight, re-download from Google Fonts with a modern browser user-agent (older ones get `ttf`
+instead of `woff2`) and update the `@font-face` blocks:
+
+```sh
+curl -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0" \
+  "https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300..700;1,300..600&display=swap"
+```
 
 ## Running locally
 

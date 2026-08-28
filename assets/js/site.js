@@ -45,10 +45,17 @@
     return `${MONTHS[parseInt(m[2], 10) - 1] || ""} ${m[1]}`;
   }
 
-  async function loadJSON(name) {
-    const res = await fetch(`data/${name}.json`, { cache: "no-cache" });
-    if (!res.ok) throw new Error(`Could not load data/${name}.json (${res.status})`);
-    return res.json();
+  // Promises are cached so a file is fetched once per page and, more importantly,
+  // so the fetch can be kicked off at script-execution time and awaited later.
+  const _inflight = {};
+  function loadJSON(name) {
+    if (!_inflight[name]) {
+      _inflight[name] = fetch(`data/${name}.json`, { cache: "no-cache" }).then((res) => {
+        if (!res.ok) throw new Error(`Could not load data/${name}.json (${res.status})`);
+        return res.json();
+      });
+    }
+    return _inflight[name];
   }
 
   // Optional data file: a missing or malformed one must not break the page.
@@ -156,7 +163,7 @@
 
     const hasThumb = opts.thumb && pub.image;
     const thumb = hasThumb
-      ? `<div class="pub__thumb"><img src="${esc(pub.image)}" alt="" loading="lazy" onerror="this.parentNode.remove()"></div>`
+      ? `<div class="pub__thumb"><img src="${esc(pub.image)}" alt="" loading="lazy" decoding="async" onerror="this.parentNode.remove()"></div>`
       : "";
 
     const linkChips = LINK_ORDER.filter((k) => links[k])
@@ -221,7 +228,7 @@
             <div class="portrait__fallback">${esc(initials)}</div>
             ${
               profile.photo
-                ? `<img src="${esc(profile.photo)}" alt="${esc(profile.name)}" onerror="this.remove()">`
+                ? `<img src="${esc(profile.photo)}" alt="${esc(profile.name)}" width="560" height="747" fetchpriority="high" decoding="async" onerror="this.remove()">`
                 : ""
             }
           </div>
@@ -259,7 +266,7 @@
                 .join("")}</span>`
             : ""
         }</p>
-        ${n.image ? `<img class="news__media" src="${esc(n.image)}" alt="" loading="lazy" onerror="this.remove()">` : ""}
+        ${n.image ? `<img class="news__media" src="${esc(n.image)}" alt="" loading="lazy" decoding="async" onerror="this.remove()">` : ""}
       </div>
     </li>`;
 
@@ -438,9 +445,21 @@
   /* ---------- Boot ---------- */
   const PAGES = { home: renderHome, publications: renderPublications, cv: renderCV };
 
+  // What each page will ask for. Requesting it during init — rather than waiting
+  // for DOMContentLoaded — starts the JSON downloads in parallel with the CSS
+  // and web fonts instead of after them.
+  const PAGE_DATA = {
+    home: ["profile", "news", "publications", "authors"],
+    publications: ["profile", "publications", "authors"],
+    cv: ["profile", "cv"]
+  };
+
   window.Site = {
     init: function (page) {
       applyTheme();
+      // errors are handled by whoever awaits the cached promise; swallow here
+      // only so the prefetch itself never surfaces as an unhandled rejection
+      (PAGE_DATA[page] || []).forEach((n) => loadJSON(n).catch(() => {}));
       document.addEventListener("DOMContentLoaded", function () {
         initNav();
         const render = PAGES[page];

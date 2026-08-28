@@ -31,7 +31,8 @@ publications.html     Full publication list
 cv.html               CV
 assets/css/style.css  All styling; design tokens in :root (+ dark override)
 assets/js/site.js     Whole renderer: fetches JSON and builds every page
-assets/img/           profile.jpg + pubs/<id>.jpg teasers
+assets/img/           profile.jpg + pubs/<id>.jpg teasers, sized to display size
+assets/fonts/         self-hosted Jost woff2 + OFL licence
 data/*.json           All content
 cv.pdf                Authoritative CV, linked from the site
 404.html              GitHub Pages error page; uses root-absolute asset paths
@@ -89,6 +90,13 @@ All three also have `#nav-social` and `#footer`, filled from `profile.json`.
   fonts, no external icon CDN.
 - Dark mode follows `prefers-color-scheme` only, applied by `applyTheme()`.
   There is no toggle and the owner does not want one.
+- **Do not undo the load-order work.** The `<script>` sits *before* the
+  stylesheet links on purpose: a script after a stylesheet cannot execute until
+  that stylesheet arrives, which used to stall the JSON prefetch. `Site.init()`
+  starts its page's fetches immediately (see `PAGE_DATA`) and the renderer
+  awaits the cached promises. Fonts are self-hosted for the same reason — no
+  external origin on the critical path. Images are sized to what the layout
+  displays; do not commit an unresized original.
 - `loadJSON(name)` is required data; `loadJSONOptional(name, fallback)` is for
   files whose absence must not break a page.
 
