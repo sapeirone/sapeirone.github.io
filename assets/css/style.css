@@ -223,7 +223,7 @@ section + section { padding-top: 0; }
   margin-bottom: 1.6rem;
 }
 
-.hero__bio { color: var(--text-soft); font-size: 1rem; max-width: 62ch; }
+.hero__bio { color: var(--text-soft); font-size: 1.08rem; max-width: 62ch; }
 .hero__bio strong { color: var(--text); font-weight: 600; }
 
 .hero__actions { display: flex; flex-wrap: wrap; gap: 1.6rem; margin-top: 1.8rem; }
