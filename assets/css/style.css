@@ -515,6 +515,8 @@ a.author.me:hover { color: var(--accent); }
   padding-top: .12rem; white-space: nowrap;
 }
 .row__title { font-size: .98rem; font-weight: 600; color: var(--text); line-height: 1.4; }
+.row__title a { color: var(--text); }
+.row__title a:hover { color: var(--accent); }
 .row__detail { font-size: .88rem; color: var(--muted); margin-top: .12rem; }
 .row--highlight .row__title::after {
   content: "★";

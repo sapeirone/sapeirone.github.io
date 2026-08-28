@@ -393,7 +393,7 @@
             (s) => `<div class="row">
               <div class="row__period">${esc(s.period)}</div>
               <div>
-                <div class="row__title">${esc(s.name)}</div>
+                <div class="row__title">${s.thesis ? `<a href="${esc(s.thesis)}" target="_blank" rel="noopener">${esc(s.name)}</a>` : esc(s.name)}</div>
                 <div class="row__detail">${esc(s.topic)}</div>
               </div>
             </div>`

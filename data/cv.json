@@ -132,32 +132,38 @@
     {
       "period": "2026",
       "name": "Andrea Zenotto",
-      "topic": "Learning the hierarchy of human activities"
+      "topic": "Learning the hierarchy of human activities",
+      "thesis": "https://webthesis.biblio.polito.it/41436/"
     },
     {
       "period": "2025 — 2026",
       "name": "Mattia Sabato",
-      "topic": "Higher-Order Message Passing for Structured Video Understanding of Human Dynamics"
+      "topic": "Higher-Order Message Passing for Structured Video Understanding of Human Dynamics",
+      "thesis": "https://webthesis.biblio.polito.it/39671/"
     },
     {
       "period": "2025",
       "name": "Federico Castriotta",
-      "topic": "Learning the hierarchy of human activities in multi-view scenarios"
+      "topic": "Learning the hierarchy of human activities in multi-view scenarios",
+      "thesis": "https://webthesis.biblio.polito.it/38615/"
     },
     {
       "period": "2024",
       "name": "Giuseppe Atanasio",
-      "topic": "HIMU-MAE: Exploiting Head-mounted Inertial Measurement Unit with Masked Autoencoders for Egocentric Vision"
+      "topic": "HIMU-MAE: Exploiting Head-mounted Inertial Measurement Unit with Masked Autoencoders for Egocentric Vision",
+      "thesis": "https://webthesis.biblio.polito.it/33948/"
     },
     {
       "period": "2023 — 2024",
       "name": "Domenico Mereu",
-      "topic": "MARE-Graph: Multimodal Action Recognition in Egocentric video with Graph Neural Network"
+      "topic": "MARE-Graph: Multimodal Action Recognition in Egocentric video with Graph Neural Network",
+      "thesis": "https://webthesis.biblio.polito.it/30811/"
     },
     {
       "period": "2023 — 2024",
       "name": "Amirshayan Nasirimajd",
-      "topic": "Sequential Domain Generalisation for Egocentric Action Recognition"
+      "topic": "Sequential Domain Generalisation for Egocentric Action Recognition",
+      "thesis": "https://webthesis.biblio.polito.it/30812/"
     }
   ],
   "service": {
