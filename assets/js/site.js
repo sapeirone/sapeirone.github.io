@@ -322,14 +322,10 @@
         .map(
           (e) => `<div class="tl ${e.current ? "tl--current" : ""}">
             <div class="tl__head">
-              <div>
-                <div class="tl__inst">${esc(e.institution)}</div>
-                <div class="tl__degree">${esc(e.degree)}</div>
-              </div>
-              <div style="text-align:right">
-                <div class="tl__period">${esc(e.period)}</div>
-                <div class="tl__loc">${esc(e.location || "")}</div>
-              </div>
+              <div class="tl__inst">${esc(e.institution)}</div>
+              <div class="tl__period">${esc(e.period)}</div>
+              <div class="tl__degree">${esc(e.degree)}</div>
+              <div class="tl__loc">${esc(e.location || "")}</div>
             </div>
             ${
               (e.details || []).length
