@@ -18,6 +18,10 @@ Jekyll site at https://sapeirone.github.io/.
 - **Do not invent facts.** Publication metadata, Scholar IDs, dates and awards
   must come from the owner, the old site, or a verified source. When unsure of
   something like a co-author's Scholar profile, leave it blank and ask.
+- **The bio stays short.** An attempt to make it "explicit about impact" by
+  adding challenge placements, compute grants, supervised-thesis counts and
+  reviewer awards was cut back to a single sentence naming CVPR / ICCV / TPAMI /
+  IJCV. Achievements belong on the CV page; the bio names the venues and stops.
 
 ## Layout
 
@@ -74,7 +78,8 @@ All three also have `#nav-social` and `#footer`, filled from `profile.json`.
   before the text. `text` allows inline HTML (`<strong>`).
 - **`cv.json`** — `education`, `awards`, `teaching`, `students`, `service`.
   Skills and publications sections were deliberately removed from the CV page;
-  do not add them back.
+  do not add them back. This is where achievements live — awards, grants,
+  supervised students, reviewer recognition — rather than in the bio.
 
 ## Conventions in `site.js`
 
@@ -124,9 +129,27 @@ diagnose mobile layout from those screenshots; measure
 
 Static; GitHub Pages serves the folder as-is. Nothing to build.
 
+## Context
+
+The owner is a final-year PhD candidate **on the job market** (as of August 2026).
+That raises the stakes on: getting the site actually deployed, an `og:image` so
+shared links don't unfurl as bare text, and which papers carry `selected: true`.
+Suggestions that were raised and are still open, in case they come up again:
+an availability line in `profile.json` → `now`; `egopack` (CVPR 2024, the
+most-cited paper) currently has `"selected": false` and so is missing from the
+homepage; the email address appears only as a nav icon, never as plain text; and
+six of the nine `news.json` entries never render anywhere.
+
 ## Open items
 
 - `authors.json` has no Scholar URL for **Andrea Zenotto** — none could be
   found. Ask the owner before guessing.
+- **Nothing is committed and there is no remote.** `main` has zero commits and
+  every file is untracked; the site is not deployed. What `sapeirone.github.io`
+  currently serves is the old al-folio site.
+- No `og:image` on any page, so links unfurl as bare text cards.
+- The pages are JS-rendered, so link unfurlers and non-JS crawlers see empty
+  sections. A full fix needs a build step, which the design rules forbid; the
+  cheap mitigation would be static JSON-LD in the HTML head.
 - `cv.html` still has a `<p class="eyebrow">Curriculum Vitae</p>` directly above
   its identical `<h1>`. Flagged to the owner, not yet decided.
