@@ -1,0 +1,76 @@
+[
+  {
+    "date": "2026-08-28",
+    "emoji": "📄",
+    "text": "New preprint: <strong>Learning to Evolve Scenes: Reasoning about Human Activities with Scene Graphs</strong>, with Francesca Pistilli and Giuseppe Averta.",
+    "links": [
+      {
+        "label": "Project page",
+        "url": "https://francescapistilli.github.io/GLEN/"
+      }
+    ]
+  },
+  {
+    "date": "2026-05-01",
+    "emoji": "🥈",
+    "text": "Our team placed <strong>2nd in the Ego4D Step Grounding Challenge</strong> at CVPR 2026 with HiERO-StepG.",
+    "links": [
+      {
+        "label": "Report",
+        "url": "https://arxiv.org/abs/2605.31227"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-05",
+    "emoji": "🎓",
+    "text": "I will participate in the <strong>ICCV 2025 Doctoral Consortium</strong> in Honolulu.",
+    "links": []
+  },
+  {
+    "date": "2025-10-01",
+    "emoji": "🎉",
+    "text": "<strong>Hier-EgoPack</strong> was accepted at <strong>IEEE TPAMI</strong>.",
+    "links": [
+      {
+        "label": "Project page",
+        "url": "https://sapeirone.github.io/hier-egopack/"
+      }
+    ]
+  },
+  {
+    "date": "2025-06-26",
+    "emoji": "🎉",
+    "text": "Our paper <strong>HiERO: understanding the hierarchy of human behavior enhances reasoning on egocentric videos</strong> was accepted at <strong>ICCV 2025</strong>.",
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2505.12911"
+      }
+    ]
+  },
+  {
+    "date": "2025-06-12",
+    "emoji": "📣",
+    "text": "I am presenting HiERO and Hier-EgoPack at the <strong>EgoVis Workshop</strong> and the <strong>Workshop on Visual Concepts</strong> at CVPR 2025.",
+    "links": []
+  },
+  {
+    "date": "2025-03-27",
+    "emoji": "🗣️",
+    "text": "I presented my research at the <strong>LTS4 lab</strong>, EPFL.",
+    "links": []
+  },
+  {
+    "date": "2025-03-15",
+    "emoji": "✈️",
+    "text": "I am visiting the <strong>LTS4 lab at EPFL</strong>, working at the intersection between concept learning and video understanding under the supervision of Prof. Pascal Frossard.",
+    "links": []
+  },
+  {
+    "date": "2024-12-15",
+    "emoji": "🎉",
+    "text": "Our journal article <strong>Egocentric zone-aware action recognition across environments</strong> was accepted at <strong>Pattern Recognition Letters</strong>.",
+    "links": []
+  }
+]

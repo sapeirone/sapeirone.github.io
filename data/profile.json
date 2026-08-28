@@ -1,0 +1,54 @@
+{
+  "name": "Simone Alberto Peirone",
+  "shortName": "Simone A. Peirone",
+  "nameAliases": [
+    "Simone Alberto Peirone",
+    "Peirone, S. A.",
+    "S. A. Peirone"
+  ],
+  "role": "ELLIS PhD Candidate in Artificial Intelligence",
+  "affiliation": "Politecnico di Torino",
+  "group": "VANDAL Lab",
+  "location": "Turin, Italy",
+  "photo": "assets/img/profile.jpg",
+  "cv": "cv.pdf",
+  "cvUpdated": "August 2026",
+  "bio": [
+    "I am a final-year <strong>PhD candidate in Artificial Intelligence</strong> at <strong>Politecnico di Torino</strong>, where I work in the VANDAL lab under the supervision of <strong>Prof. Giuseppe Averta</strong> and <strong>Prof. Barbara Caputo</strong>. My research is on <strong>egocentric video understanding</strong>: teaching models to reason about human activities the way people do, by composing simple skills into complex behaviours and organising them hierarchically in time. My work has been published at the top venues in computer vision and machine learning, including CVPR/ICCV, TPAMI and IJCV.",
+    "In Summer 2025 I was a visiting researcher at <strong>EPFL</strong>, in the LTS4 lab led by <strong>Prof. Pascal Frossard</strong>, exploring the intersection of video understanding and <strong>concept learning</strong> — how to make the representations learnt from video interpretable and reusable across tasks.",
+    "I am a member of the <strong>ELLIS PhD &amp; Postdoc Program</strong>. Outside of research, you will likely find me hiking somewhere in the Alps or brewing beer at home."
+  ],
+  "now": [
+    {
+      "label": "PhD Candidate",
+      "detail": "Politecnico di Torino · VANDAL",
+      "since": "Nov 2022 - ongoing"
+    },
+    {
+      "label": "ELLIS PhD & Postdoc Program",
+      "detail": "Member"
+    }
+  ],
+  "links": [
+    {
+      "type": "email",
+      "label": "Email",
+      "url": "mailto:simone.peirone@polito.it"
+    },
+    {
+      "type": "scholar",
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=K0efPssAAAAJ"
+    },
+    {
+      "type": "github",
+      "label": "GitHub",
+      "url": "https://github.com/sapeirone"
+    },
+    {
+      "type": "linkedin",
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/simone-peirone"
+    }
+  ]
+}

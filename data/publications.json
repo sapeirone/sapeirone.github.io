@@ -1,0 +1,194 @@
+[
+  {
+    "id": "evolve-scenes",
+    "title": "Learning to Evolve Scenes: Reasoning about Human Activities with Scene Graphs",
+    "authors": [
+      "Francesca Pistilli",
+      "Simone Alberto Peirone",
+      "Giuseppe Averta"
+    ],
+    "year": 2026,
+    "type": "preprint",
+    "venue": "Preprint",
+    "venueLong": "Preprint",
+    "selected": true,
+    "tldr": "Modelling how a scene graph evolves over time to reason about the activities that transform it.",
+    "image": "assets/img/pubs/glen.jpg",
+    "links": {
+      "page": "https://francescapistilli.github.io/GLEN/",
+      "arxiv": "https://arxiv.org/abs/2607.02425",
+      "code": "https://github.com/francescapistilli/glen",
+      "hf": "https://huggingface.co/datasets/francescapistilli/sg-ego"
+    }
+  },
+  {
+    "id": "hier-egopack",
+    "title": "Hier-EgoPack: Hierarchical Egocentric Video Understanding with Diverse Task Perspectives",
+    "authors": [
+      "Simone Alberto Peirone",
+      "Francesca Pistilli",
+      "Antonio Alliegro",
+      "Tatiana Tommasi",
+      "Giuseppe Averta"
+    ],
+    "year": 2025,
+    "type": "journal",
+    "venue": "TPAMI",
+    "venueLong": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "selected": true,
+    "tldr": "A unified framework where a single model carries a 'backpack' of task perspectives and reasons over multiple temporal granularities.",
+    "image": "assets/img/pubs/hier-egopack.jpg",
+    "links": {
+      "page": "https://sapeirone.github.io/hier-egopack/",
+      "arxiv": "https://arxiv.org/abs/2502.02487",
+      "code": "https://github.com/sapeirone/hier-egopack"
+    }
+  },
+  {
+    "id": "hiero",
+    "title": "HiERO: understanding the hierarchy of human behavior enhances reasoning on egocentric videos",
+    "authors": [
+      "Simone Alberto Peirone",
+      "Francesca Pistilli",
+      "Giuseppe Averta"
+    ],
+    "year": 2025,
+    "type": "conference",
+    "venue": "ICCV",
+    "venueLong": "IEEE/CVF International Conference on Computer Vision",
+    "selected": true,
+    "tldr": "A weakly-supervised method that enriches video segment features with the hierarchical activity threads they belong to.",
+    "image": "assets/img/pubs/hiero.jpg",
+    "links": {
+      "page": "https://sapeirone.github.io/HiERO/",
+      "arxiv": "https://arxiv.org/abs/2505.12911",
+      "code": "https://github.com/sapeirone/HiERO"
+    }
+  },
+  {
+    "id": "dg-action-sequences",
+    "title": "Domain Generalization using Action Sequences for Egocentric Action Recognition",
+    "authors": [
+      "Amirshayan Nasirimajd",
+      "Chiara Plizzari",
+      "Simone Alberto Peirone",
+      "Marco Ciccone",
+      "Giuseppe Averta",
+      "Barbara Caputo"
+    ],
+    "year": 2025,
+    "type": "journal",
+    "venue": "PRL",
+    "venueLong": "Pattern Recognition Letters",
+    "selected": false,
+    "tldr": "Action sequences as a domain-invariant signal for recognising actions across unseen kitchens.",
+    "links": {}
+  },
+  {
+    "id": "egozar",
+    "title": "Egocentric zone-aware action recognition across environments",
+    "authors": [
+      "Simone Alberto Peirone",
+      "Gabriele Goletto",
+      "Mirco Planamente",
+      "Andrea Bottino",
+      "Barbara Caputo",
+      "Giuseppe Averta"
+    ],
+    "equalContribution": [
+      "Simone Alberto Peirone",
+      "Gabriele Goletto"
+    ],
+    "year": 2025,
+    "type": "journal",
+    "venue": "PRL",
+    "venueLong": "Pattern Recognition Letters",
+    "selected": false,
+    "tldr": "Activity-centric zones transfer across environments and make action recognition more robust to new places.",
+    "image": "assets/img/pubs/egozar.jpg",
+    "links": {
+      "page": "https://gabrielegoletto.github.io/EgoZAR/",
+      "code": "https://github.com/sapeirone/EgoZAR"
+    }
+  },
+  {
+    "id": "egopack",
+    "title": "A backpack full of skills: Egocentric video understanding with diverse task perspectives",
+    "authors": [
+      "Simone Alberto Peirone",
+      "Francesca Pistilli",
+      "Antonio Alliegro",
+      "Giuseppe Averta"
+    ],
+    "year": 2024,
+    "type": "conference",
+    "venue": "CVPR",
+    "venueLong": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+    "selected": false,
+    "tldr": "A unified model for egocentric video that reuses what it learnt on previous tasks as a 'backpack of skills' for novel ones.",
+    "image": "assets/img/pubs/egopack.jpg",
+    "links": {
+      "page": "https://sapeirone.github.io/EgoPack/",
+      "arxiv": "https://arxiv.org/abs/2403.03037",
+      "code": "https://github.com/sapeirone/EgoPack",
+      "video": "https://www.youtube.com/watch?v=roKNbBP5AXY"
+    }
+  },
+  {
+    "id": "rna",
+    "title": "Relative norm alignment for tackling domain shift in deep multi-modal classification",
+    "authors": [
+      "Mirco Planamente",
+      "Chiara Plizzari",
+      "Simone Alberto Peirone",
+      "Barbara Caputo",
+      "Andrea Bottino"
+    ],
+    "year": 2024,
+    "type": "journal",
+    "venue": "IJCV",
+    "venueLong": "International Journal of Computer Vision",
+    "selected": false,
+    "tldr": "Aligning the relative feature norms of different modalities closes the domain gap in multi-modal classification.",
+    "image": "assets/img/pubs/rna.jpg",
+    "links": {}
+  },
+  {
+    "id": "hiero-stepg",
+    "title": "HiERO-StepG @ Ego4D Step Grounding Challenge: hierarchical activity understanding enables zero-shot step grounding",
+    "authors": [
+      "Andrea Zenotto",
+      "Simone Alberto Peirone",
+      "Francesca Pistilli",
+      "Giuseppe Averta"
+    ],
+    "year": 2026,
+    "type": "report",
+    "venue": "Technical report",
+    "venueLong": "arXiv:2605.31227 · 2nd place, Ego4D Step Grounding Challenge (CVPR 2026)",
+    "selected": false,
+    "award": "2nd place",
+    "links": {
+      "arxiv": "https://arxiv.org/abs/2605.31227"
+    }
+  },
+  {
+    "id": "ek100-uda",
+    "title": "Epic-Kitchens-100 unsupervised domain adaptation challenge: Mixed sequences prediction",
+    "authors": [
+      "Amirshayan Nasirimajd",
+      "Simone Alberto Peirone",
+      "Chiara Plizzari",
+      "Barbara Caputo"
+    ],
+    "year": 2023,
+    "type": "report",
+    "venue": "Technical report",
+    "venueLong": "arXiv:2307.12837 · 2nd place, EPIC-Kitchens UDA Challenge (CVPR 2023)",
+    "selected": false,
+    "award": "2nd place",
+    "links": {
+      "arxiv": "https://arxiv.org/abs/2307.12837"
+    }
+  }
+]

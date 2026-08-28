@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sapeirone.github.io/sitemap.xml

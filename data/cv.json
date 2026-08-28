@@ -1,0 +1,192 @@
+{
+  "education": [
+    {
+      "institution": "Politecnico di Torino",
+      "degree": "ELLIS PhD Student, Artificial Intelligence",
+      "location": "Turin, Italy",
+      "period": "Nov 2022 — present",
+      "current": true,
+      "details": [
+        "Working on egocentric video understanding of human activities through the lenses of <em>compositionality</em>, exploring how different reasoning tasks can share and benefit from complementary knowledge, and <em>hierarchy</em>, by enabling models to reason about the structure behind human activities.",
+        "<strong>Thesis title:</strong> Egocentric Vision for Advanced Human-Robot Cooperation",
+        "<strong>Programme:</strong> National PhD Programme in Artificial Intelligence",
+        "<strong>Supervisors:</strong> Prof. Giuseppe Averta, Prof. Barbara Caputo"
+      ],
+      "keywords": [
+        "Video understanding",
+        "Concept learning",
+        "Graph neural networks"
+      ]
+    },
+    {
+      "institution": "École Polytechnique Fédérale de Lausanne (EPFL)",
+      "degree": "Visiting PhD Student",
+      "location": "Lausanne, Switzerland",
+      "period": "Mar 2025 — Sep 2025",
+      "details": [
+        "Working on applications of concept learning to video understanding models.",
+        "<strong>Supervisor:</strong> Prof. Pascal Frossard"
+      ]
+    },
+    {
+      "institution": "Politecnico di Torino",
+      "degree": "M.Sc. Computer Engineering",
+      "location": "Turin, Italy",
+      "period": "2020 — 2022",
+      "details": [
+        "<strong>Thesis title:</strong> EGO-T³: Test Time Training for Egocentric Videos",
+        "<strong>Supervisors:</strong> Prof. Barbara Caputo, Dr. Mirco Planamente, Dr. Chiara Plizzari",
+        "<strong>Final mark:</strong> 110/110 cum Laude"
+      ]
+    },
+    {
+      "institution": "Politecnico di Torino",
+      "degree": "B.Sc. Computer Engineering",
+      "location": "Turin, Italy",
+      "period": "2017 — 2020",
+      "details": [
+        "<strong>Final mark:</strong> 110/110 cum Laude"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "year": "2026",
+      "title": "Outstanding Reviewer",
+      "detail": "ECCV 2026"
+    },
+    {
+      "year": "2026",
+      "title": "IscrC “HiERO” grant",
+      "detail": "68k compute hours, CINECA"
+    },
+    {
+      "year": "2026",
+      "title": "2nd place, Ego4D Step Grounding Challenge",
+      "detail": "CVPR 2026",
+      "highlight": true
+    },
+    {
+      "year": "2026",
+      "title": "Silver Reviewer",
+      "detail": "ICML 2026"
+    },
+    {
+      "year": "2025",
+      "title": "IscrC “HighHAU” grant",
+      "detail": "80k compute hours, CINECA"
+    },
+    {
+      "year": "2025",
+      "title": "Top Reviewer",
+      "detail": "NeurIPS 2025 — conference registration fee waiver"
+    },
+    {
+      "year": "2025",
+      "title": "Doctoral Consortium mentee",
+      "detail": "ICCV 2025 — registration fee waiver + $1200 travel reimbursement",
+      "highlight": true
+    },
+    {
+      "year": "2025",
+      "title": "IscrC “EgoProc” grant",
+      "detail": "56k compute hours, CINECA"
+    },
+    {
+      "year": "2023",
+      "title": "2nd place, EPIC-Kitchens UDA Challenge",
+      "detail": "CVPR 2023",
+      "highlight": true
+    }
+  ],
+  "teaching": [
+    {
+      "period": "2026",
+      "title": "Modelli per l'IA",
+      "role": "Teacher",
+      "detail": "Models for AI — module on image detection and segmentation"
+    },
+    {
+      "period": "2024 — 2026",
+      "title": "Advanced Machine Learning",
+      "role": "Teaching Assistant"
+    },
+    {
+      "period": "2024 — 2026",
+      "title": "Data Analysis and Artificial Intelligence",
+      "role": "Teaching Assistant"
+    },
+    {
+      "period": "2024 — 2026",
+      "title": "Algorithms and Data Structures",
+      "role": "Teaching Assistant",
+      "detail": "Taught in Italian"
+    },
+    {
+      "period": "2024 — 2025",
+      "title": "Machine Learning and Deep Learning",
+      "role": "Teaching Assistant"
+    }
+  ],
+  "students": [
+    {
+      "period": "2026",
+      "name": "Andrea Zenotto",
+      "topic": "Learning the hierarchy of human activities"
+    },
+    {
+      "period": "2025 — 2026",
+      "name": "Mattia Sabato",
+      "topic": "Higher-Order Message Passing for Structured Video Understanding of Human Dynamics"
+    },
+    {
+      "period": "2025",
+      "name": "Federico Castriotta",
+      "topic": "Learning the hierarchy of human activities in multi-view scenarios"
+    },
+    {
+      "period": "2024",
+      "name": "Giuseppe Atanasio",
+      "topic": "HIMU-MAE: Exploiting Head-mounted Inertial Measurement Unit with Masked Autoencoders for Egocentric Vision"
+    },
+    {
+      "period": "2023 — 2024",
+      "name": "Domenico Mereu",
+      "topic": "MARE-Graph: Multimodal Action Recognition in Egocentric video with Graph Neural Network"
+    },
+    {
+      "period": "2023 — 2024",
+      "name": "Amirshayan Nasirimajd",
+      "topic": "Sequential Domain Generalisation for Egocentric Action Recognition"
+    }
+  ],
+  "service": {
+    "reviewing": [
+      "CVPR",
+      "ICCV",
+      "ECCV",
+      "NeurIPS",
+      "ICML",
+      "BMVC",
+      "IJCV",
+      "ICRA",
+      "TETC",
+      "TMM",
+      "TPAMI"
+    ],
+    "roles": [
+      {
+        "title": "Outstanding Reviewer",
+        "detail": "ECCV 2026"
+      },
+      {
+        "title": "Silver Reviewer",
+        "detail": "ICML 2026"
+      },
+      {
+        "title": "Top Reviewer",
+        "detail": "NeurIPS 2025"
+      }
+    ]
+  }
+}
