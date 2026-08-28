@@ -584,13 +584,22 @@ a.author.me:hover { color: var(--accent); }
 }
 
 @media (max-width: 880px) {
-  .hero__grid { grid-template-columns: 1fr; }
-  .hero__aside {
-    grid-template-columns: 150px minmax(0, 1fr);
-    align-items: start;
-    gap: 1.25rem;
-  }
-  .portrait { aspect-ratio: 1 / 1; }
+  .hero__grid { grid-template-columns: 1fr; row-gap: 1.35rem; }
+
+  /* Flatten both hero columns into the one grid so their children can be
+     interleaved: the portrait belongs between the name and the bio here,
+     but it lives in the other column in the two-column desktop layout. */
+  .hero__grid > div,
+  .hero__aside { display: contents; }
+
+  .hero__name    { order: 1; margin-bottom: 0; }
+  .hero__tagline { order: 2; margin-bottom: 0; }
+  .portrait      { order: 3; }
+  .hero__bio     { order: 4; }
+  .hero__actions { order: 5; margin-top: .2rem; }
+  .now-card      { order: 6; }
+
+  .portrait { width: 190px; max-width: 55%; aspect-ratio: 3 / 4; justify-self: start; }
   .cv-layout { grid-template-columns: 1fr; }
   .cv-nav {
     position: static;
@@ -614,18 +623,19 @@ a.author.me:hover { color: var(--accent); }
   }
   .nav__links::-webkit-scrollbar { display: none; }
   .nav__links a { padding: .35rem .5rem; font-size: .85rem; }
-  .hero__aside { grid-template-columns: 1fr; }
-  .portrait { max-width: 200px; aspect-ratio: 3 / 4; }
   .news::before { left: 3px; }
   .news li { grid-template-columns: 1fr; gap: .3rem; padding-left: 1.5rem; }
   .news li::before { left: 3px; top: 1.35rem; }
   .news time { text-align: left; padding-right: 0; }
   .pub { grid-template-columns: 1fr; gap: .9rem; }
   .pub__thumb { width: 100%; aspect-ratio: 16 / 7; }
-  .pub__links { margin-left: 0; }
+  /* flex-basis:100% forces a line break, so the badges keep one row and the
+     links get their own instead of the two sharing a cramped line */
+  .pub__links { margin-left: 0; flex-basis: 100%; margin-top: .2rem; }
   .row { grid-template-columns: 1fr; gap: .2rem; }
   .row__period { color: var(--accent); }
-  .footer__inner { flex-direction: column; align-items: flex-start; }
+  .footer__inner { flex-direction: column; align-items: flex-start; gap: .9rem; }
+  .footer .social { align-self: center; }
 }
 
 @media (prefers-reduced-motion: reduce) {

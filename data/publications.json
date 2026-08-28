@@ -82,7 +82,9 @@
     "venueLong": "Pattern Recognition Letters",
     "selected": false,
     "tldr": "Action sequences as a domain-invariant signal for recognising actions across unseen kitchens.",
-    "links": {}
+    "links": {
+      "paper": "https://www.sciencedirect.com/science/article/pii/S0167865525002387"
+    }
   },
   {
     "id": "egozar",
@@ -151,7 +153,9 @@
     "selected": false,
     "tldr": "Aligning the relative feature norms of different modalities closes the domain gap in multi-modal classification.",
     "image": "assets/img/pubs/rna.jpg",
-    "links": {}
+    "links": {
+      "paper": "https://link.springer.com/article/10.1007/s11263-024-01998-9"
+    }
   },
   {
     "id": "hiero-stepg",

@@ -82,8 +82,6 @@ too — a teaser shown under the text, capped at 420px wide.
 
 - **`data/authors.json`** — no Google Scholar profile found for **Andrea Zenotto**; his name renders as plain
   text until a URL is added.
-- **`data/publications.json`** — `links` is empty for `dg-action-sequences` (PRL) and `rna` (IJCV), so those
-  two titles aren't clickable.
 - **Social links** — icons for `orcid`, `semanticscholar` and `bluesky` are still built into `site.js`, so
   re-adding any of them is a one-line entry in `profile.json` → `links`.
 
