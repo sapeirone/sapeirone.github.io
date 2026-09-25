@@ -1,5 +1,25 @@
 [
   {
+    "id": "grace",
+    "title": "A General Concept-based Decomposition for Vision–Language Embeddings",
+    "authors": [
+      "Simone Alberto Peirone", 
+      "Ortal Senouf", 
+      "Francesca Pistilli", 
+      "Giuseppe Averta", 
+      "Pascal Frossard"
+    ],
+    "year": 2026,
+    "type": "conference",
+    "venue": "NeurIPS",
+    "venueLong": "Annual Conference on Neural Information Processing Systems",
+    "selected": true,
+    "tldr": "GRACE exposes the concept-based structure of VLMs by breaking down video embeddings into a composition of human-interpretable concepts, making them more interpretable.",
+    "image": "assets/img/pubs/grace.png",
+    "links": {
+    }
+  },
+  {
     "id": "evolve-scenes",
     "title": "Learning to Evolve Scenes: Reasoning about Human Activities with Scene Graphs",
     "authors": [

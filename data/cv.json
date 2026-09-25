@@ -131,6 +131,11 @@
   "students": [
     {
       "period": "2026",
+      "name": "Fabio Marchese",
+      "topic": "Temporal grounding in concept bottleneck models"
+    },
+    {
+      "period": "2026",
       "name": "Andrea Zenotto",
       "topic": "Learning the hierarchy of human activities",
       "thesis": "https://webthesis.biblio.polito.it/41436/"
