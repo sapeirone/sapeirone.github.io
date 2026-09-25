@@ -8,9 +8,9 @@
       "Giuseppe Averta"
     ],
     "year": 2026,
-    "type": "preprint",
-    "venue": "Preprint",
-    "venueLong": "Preprint",
+    "type": "conference",
+    "venue": "NeurIPS",
+    "venueLong": "Annual Conference on Neural Information Processing Systems",
     "selected": true,
     "tldr": "A graph edit formulation to model dynamic scenes of human acitivties.",
     "image": "assets/img/pubs/glen.jpg",

@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-11-24",
+    "emoji": "🔥",
+    "text": "Our papers \"<strong>Learning to Evolve Scenes: Reasoning about Human Activities with Scene Graphs</strong>\" and  \"<strong>A General Concept-based Decomposition for Vision–Language Embeddings</strong>\" are both accepted at <strong>NeurIPS 2026</strong>. A huge thanks to all coauthors!",
+    "links": []
+  },
+  {
     "date": "2026-08-28",
     "emoji": "📄",
     "text": "New preprint: <strong>Learning to Evolve Scenes: Reasoning about Human Activities with Scene Graphs</strong>, with Francesca Pistilli and Giuseppe Averta.",
