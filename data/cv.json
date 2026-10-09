@@ -52,11 +52,6 @@
   "awards": [
     {
       "year": "2026",
-      "title": "Outstanding Reviewer",
-      "detail": "ECCV 2026"
-    },
-    {
-      "year": "2026",
       "title": "IscrC “HiERO” grant",
       "detail": "68k compute hours, CINECA"
     },
@@ -67,19 +62,9 @@
       "highlight": true
     },
     {
-      "year": "2026",
-      "title": "Silver Reviewer",
-      "detail": "ICML 2026"
-    },
-    {
       "year": "2025",
       "title": "IscrC “HighHAU” grant",
       "detail": "80k compute hours, CINECA"
-    },
-    {
-      "year": "2025",
-      "title": "Top Reviewer",
-      "detail": "NeurIPS 2025 — conference registration fee waiver"
     },
     {
       "year": "2025",
@@ -187,16 +172,16 @@
     ],
     "roles": [
       {
-        "title": "Outstanding Reviewer",
-        "detail": "ECCV 2026"
+        "title": "Outstanding Reviewer (2026)",
+        "detail": "ECCV"
       },
       {
-        "title": "Silver Reviewer",
-        "detail": "ICML 2026"
+        "title": "Silver Reviewer (2026)",
+        "detail": "ICML"
       },
       {
-        "title": "Top Reviewer",
-        "detail": "NeurIPS 2025"
+        "title": "Top Reviewer (2025, 2026)",
+        "detail": "NeurIPS"
       }
     ]
   }
