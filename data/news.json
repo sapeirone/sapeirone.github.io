@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-10-08",
+    "emoji": "🇨🇵/🇸🇪",
+    "text": "I was recognized as a <strong>Top Reviewer</strong> at NeurIPS Datasets and Benchmarks 2026, and as an <strong>Outstanding Reviewer</strong> at ECCV 2026. See you at <strong>NeurIPS</strong> in Paris!",
+    "links": []
+  },
+  {
     "date": "2026-09-24",
     "emoji": "🔥",
     "text": "Our papers \"<strong>Learning to Evolve Scenes: Reasoning about Human Activities with Scene Graphs</strong>\" and  \"<strong>A General Concept-based Decomposition for Vision–Language Embeddings</strong>\" have been accepted at <strong>NeurIPS 2026</strong>. A huge thanks to all coauthors!",
@@ -19,13 +25,19 @@
   {
     "date": "2026-05-01",
     "emoji": "🥈",
-    "text": "Our team placed <strong>2nd in the Ego4D Step Grounding Challenge</strong> at CVPR 2026 with HiERO-StepG.",
+    "text": "Our team placed <strong>2nd in the Ego4D Step Grounding Challenge</strong> at CVPR 2026 with HiERO-StepG. Congrats to <strong>Andrea Zenotto</strong> who led this effort!",
     "links": [
       {
         "label": "Report",
         "url": "https://arxiv.org/abs/2605.31227"
       }
     ]
+  },
+  {
+    "date": "2026-05-13",
+    "emoji": "🇰🇷",
+    "text": "I was recognized as a <strong>Silver Reviewer</strong> at ICML 2026!",
+    "links": []
   },
   {
     "date": "2025-10-05",

@@ -273,7 +273,7 @@
     $("#news").innerHTML = `
       <div class="wrap">
         <div class="section-head"><h2>News</h2></div>
-        <ul class="news">${news.slice(0, 3).map(newsItem).join("")}</ul>
+        <ul class="news">${news.slice(0, 5).map(newsItem).join("")}</ul>
       </div>`;
 
     // Selected publications
